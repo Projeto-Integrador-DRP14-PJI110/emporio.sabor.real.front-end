@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
+
+      <h1>Empório Sabor Real</h1>
+    </header>
+
+    <main>
+      <div class="page-title">
+        <h3>Entrar no sistema</h3>
+      </div>
+
+      <!-- <form id="formLogin"> -->
+
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password" required />
+
+      <button type="submit" onclick="logarUsuario()">Entrar</button>
+
+      <!-- <input type="submit" name="" id="" value="Entrar"> -->
+
+      <!-- </form> -->
+
+      <div id="mensagem"></div>
+
+      <div>
+        <a href="login-novoUsuario.html">Novo usuário</a>
+      </div>
+
+      <div>
+        <a href="login-esqueceuSenha.html">Esqueci minha senha</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>DRP14 - Projeto Integrador em Computação II - Turma 007</p>
+    </footer>
+  </body>
+</html>

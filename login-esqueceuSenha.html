@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar a Senha</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+        width="120"
+        alt="logo da empresa"
+      />
+
+      <h1>Empório Sabor Real</h1>
+    </header>
+
+    <main>
+
+      <div class="page-title">
+        <h3>Gerar senha temporária</h3>
+      </div>
+
+      <!-- <form action="" onsubmit="enviarFormulario(event)"> -->
+
+        <label for="">Informe seu e-mail:</label>
+        <input type="email" name="" id="email" required />
+
+        <button type="submit" onclick="senhaTemporaria()" >Recuperar senha</button>
+
+      <!-- </form> -->
+
+      <div id="mensagem"></div>
+
+      <div id="mensagem_2"></div>
+
+      <a href="login-senhaTemporaria.html">Ir para tela de troca de senha</a>
+
+      <br>
+
+      <div class="voltar">
+        <a href="login.html">Voltar para a tela de login</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>DRP14 - Projeto Integrador em Computação II - Turma 007</p>
+    </footer>
+
+    <script>
+      function enviarFormulario(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        const form = event.target; // Obtém o formulário que disparou o evento
+        form.submit(); // Envia o formulário
+
+        // Aguarde um pequeno intervalo antes de redirecionar
+        setTimeout(() => {
+          window.location.href = 'login-senhaTemporaria.html'; // Substitua pela URL desejada
+        }, 1); // Ajuste o tempo conforme necessário
+      }
+    </script>
+  </body>
+</html>
