@@ -1,84 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="css/padrao.css" />
-  <link rel="stylesheet" href="css/" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
 
-</head>
-<body>
+  </head>
+  <body>
 
-  <header>
-    <img
-      src="Images/logo-emporio 2018.png"
-      height="120"
-      width="120"
-      alt="logo da empresa"
-    />
+    <header>
+      <img
+        src="Images/logo-emporio 2018.png"
+        height="120"
+       width="120"
+        alt="logo da empresa"
+      />
 
-    <h1>Empório Sabor Real</h1>
-  </header>
+      <h1>Empório Sabor Real</h1>
+    </header>
 
-  <main>
+    <main>
 
-    <div class="container">
-      <div class="content">
+      <div class="container">
+        <div class="content">
 
-  <h3>Menu Cadastrar</h3>
+          <h3>Menu Cadastrar</h3>
 
-  <br>
-  <br>
+          <br />
 
-  <label for>Produto: </label>
-  <input id="produto" type="text" placeholder="produto">
-  <br>
-  <label for>Produto Disponível (true or false): </label>
-  <input id="produto_disponivel" type="text" placeholder="produto_disponivel">
-  <br>
-  <label for>Quantidade: </label>
-  <input id="quantidade" type="number" placeholder="quantidade">
-  <br>
-  <label for>Data de Validade: </label>
-  <input id="validade" type="date" placeholder="validade">
-  <br>
-  <label for>Categoria: </label>
-  <input id="categoria" type="text" placeholder="categoria">
-  <br>
-  <label for>Data de Compra: </label>
-  <input id="data_compra" type="date" placeholder="data_compra">
-  <br>
-  <label for>Preço de Compra: </label>
-  <input id="preco_compra" type="text" placeholder="preco_compra">
-  <br>
-  <label for>Preço de Venda: </label>
-  <input id="preco_venda" type="text" placeholder="preco_venda">
-  <br>
-  <label for>Fornecedor: </label>
-  <input id="fornecedor" type="text" placeholder="fornecedor">
-  <br>
-  <label for>Descrição: </label>
-  <input id="descricao" type="text" placeholder="descricao">
-  <br>
-  <br>
+          <form class ="form" id="formulario" >
+            <fieldset>
+              <legend>Formulário</legend>
+              <br />
+              <br />
 
-  <div class="botao">
-  <button id="btn_cadastrar" type="submit" onclick="cadastrar()">Cadastrar</button>
-</div>
+              <label class = "lab lb1" for>Produto: </label>
+              <input id="produto" type="text" placeholder="produto">
+              <br />
+              <br />
+                
+              <label class = "lab lb2" for>Produto Disponível (true or false): </label>
+              <input id="produto_disponivel" type="text" placeholder="produto_disponivel">
+              <br />
+              <br />
+              
+              <label for>Quantidade: </label>
+              <input id="quantidade" type="number" placeholder="quantidade">
+              <br />
+              <br />
+  
+              <label for>Data de Validade: </label>
+              <input id="validade" type="date" placeholder="validade">
+              <br />
+              <br />
+  
+              <label for>Categoria: </label>
+              <input id="categoria" type="text" placeholder="categoria">
+              <br />
+              <br />
+  
+              <label for>Data de Compra: </label>
+              <input id="data_compra" type="date" placeholder="data_compra">
+              <br />
+              <br />
+  
+              <label for>Preço de Compra: </label>
+              <input id="preco_compra" type="text" placeholder="preco_compra">
+              <br />
+              <br />
+  
+              <label for>Preço de Venda: </label>
+              <input id="preco_venda" type="text" placeholder="preco_venda">
+              <br />
+              <br />
+  
+              <label for>Fornecedor: </label>
+              <input id="fornecedor" type="text" placeholder="fornecedor">
+              <br />
+              <br />
+  
+              <label for>Descrição: </label>
+              <input id="descricao" type="text" placeholder="descricao">
+              <br />
+              <br />
 
-  <div id="mensagem"></div>
+            </fieldset>
+          </form>
 
-  <div class="voltar"><a href="index.html">Voltar para o Menu Principal</a></div>
+          <br />
+          <br />
 
-</div>
-</div>
-</main>
+          <div class="botao">
+            <button class= "btn_cons bt1" id="btn_cadastrar" type="submit" onclick="cadastrar()">
+              Cadastrar
+            </button>
+          </div>
 
-<footer>
-  <p>DRP14 - Projeto Integrador em Computação II - Turma 007</p>
-</footer>
-</body>
+          <div id="mensagem"></div>
+          <br />
+  
+          <div class="voltar">
+            <button  class= "btn_cons bt2" >
+              <a href="index.html">Voltar para o Menu Principal</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+     <p>Projeto Integrador em Computação I - Turma 001</p>
+    </footer>
+  </body>
 </html>
