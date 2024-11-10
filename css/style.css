@@ -57,7 +57,6 @@ body > main .page-title {
   
 }
 
-
 body > main .content {
   display: flex;
   padding: 1em;
@@ -74,16 +73,43 @@ body > main .content section {
 
 body > main .content a {
  
-  color: rgb(230, 12, 12);
-  
+  color: #17202a;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
   
 }
 
+body > main .btn {
+  border: 1px solid #555;
+  border-radius: 10px;
+  width: 250px;
+  height: 35px;
+  background:  #edeaef;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+body > main .btn:hover {
+  box-shadow: 0 0 10px 0px black;
+}
+
+body > main .menu-title {
+  border: none;
+  width: 250px;
+  height: 35px;
+  background:  white;
+  font-size: 17px;
+  box-shadow: none;
+
+}
 
 aside {
   flex: 1 ;
   text-align: left;
   padding: 0px;
+  padding-top: 80px;
 
 }
 
