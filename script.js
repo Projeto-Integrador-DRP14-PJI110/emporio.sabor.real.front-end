@@ -30,10 +30,9 @@ function cadastrar() {
 
   // URL do endpoint
 
-  // const endpoint =
-  //   'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
+  const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
 
-  const endpoint = 'http://localhost:8080/api/v1/estoque';
+  //const endpoint = 'http://localhost:8080/api/v1/estoque';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -60,7 +59,6 @@ function cadastrar() {
     });
 }
 //#endregion
-
 
 //#region Consultar
 
@@ -119,6 +117,8 @@ function criarEstruturaTabela(dados) {
 function consultar() {
   let id = document.getElementById('id_do_produto_consultar').value;
   const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/id/${id}`;
+
+ // const endpoint = `http://localhost:8080/api/v1/estoque/id/${id}`;
 
   fetch(endpoint)
     .then(res => {
@@ -191,7 +191,6 @@ function consultar() {
 
 // Consultar por Nome
 
-
 // Função para criar a estrutura da tabela
 function criarEstruturaTabela3(dados) {
   const table = document.createElement('table');
@@ -244,7 +243,9 @@ function criarEstruturaTabela3(dados) {
 
 function consultar3() {
   let produto = document.getElementById('id_do_produto_consultar3').value;
-  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/produto/${produto}`;
+   const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/produto/${produto}`;
+
+  //const endpoint = `http://localhost:8080/api/v1/estoque/produto/${produto}`;
 
   fetch(endpoint)
     .then(res => {
@@ -351,6 +352,8 @@ function consultar4() {
 
   const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/categoria/${categoria}`;
 
+  //const endpoint = `http://localhost:8080/api/v1/estoque/categoria/${categoria}`;
+
   fetch(endpoint)
     .then(res => {
       if (!res.ok) {
@@ -418,8 +421,9 @@ function criarEstruturaProduto(dados) {
 }
 
 function consultar2() {
-  //const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque`;
-  const endpoint = `http://localhost:8080/api/v1/estoque`;
+  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque`;
+
+ // const endpoint = `http://localhost:8080/api/v1/estoque`;
 
   fetch(endpoint)
     .then(res => res.json())
@@ -458,7 +462,6 @@ function consultar2() {
 }
 //#endregion
 
-
 //#region Editar
 // Editar por ID
 
@@ -466,6 +469,8 @@ function consultarParaEditar() {
   let id = document.getElementById('id_do_produto_editar').value;
 
   const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/id/${id}`;
+
+  //const endpoint = `http://localhost:8080/api/v1/estoque/id/${id}`;
 
   fetch(endpoint)
     .then(res => {
@@ -506,6 +511,7 @@ function editar() {
   let id = document.getElementById('id_do_produto_editar').value;
 
   const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/${id}`;
+  //const endpoint = `http://localhost:8080/api/v1/estoque/${id}`;
 
   const data = {
     produto: document.getElementById('produto_editar').value,
@@ -631,7 +637,6 @@ function editar() {
 
 //#endregion
 
-
 //#region Excluir Produto
 // Excluir por ID
 
@@ -639,6 +644,8 @@ function excluir() {
   let id = document.getElementById('id_do_produto_excluir').value;
 
   const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/${id}`;
+
+  //const endpoint = `http://localhost:8080/api/v1/estoque/${id}`;
 
   fetch(endpoint, {
     method: 'DELETE',
@@ -664,7 +671,6 @@ function excluir() {
 }
 //#endregion
 
-
 //#region Cadastrar Usuário
 // Cadastrar Usuário
 
@@ -681,10 +687,9 @@ function cadastrarUsuario() {
 
   // URL do endpoint
 
-  // const endpoint =
-  //   'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
+   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential';
 
-  const endpoint = 'http://localhost:8080/api/v1/credential';
+  // const endpoint = 'http://localhost:8080/api/v1/credential';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -714,7 +719,6 @@ function cadastrarUsuario() {
 }
 //#endregion
 
-
 //#region Login
 // Logar Usuário
 
@@ -731,10 +735,9 @@ function logarUsuario() {
 
   // URL do endpoint
 
-  // const endpoint =
-  //   'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
+   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/login';
 
-  const endpoint = 'http://localhost:8080/api/v1/login';
+ // const endpoint = 'http://localhost:8080/api/v1/login';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -764,7 +767,6 @@ function logarUsuario() {
 }
 //#endregion
 
-
 //#region Trocar Senha
 // Trocar Senha
 
@@ -783,10 +785,9 @@ function trocarSenha() {
 
   // URL do endpoint
 
-  // const endpoint =
-  //   'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
+   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential';
 
-  const endpoint = 'http://localhost:8080/api/v1/credential';
+  //const endpoint = 'http://localhost:8080/api/v1/credential';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -816,7 +817,6 @@ function trocarSenha() {
 }
 //#endregion
 
-
 //#region Gerar Senha Temporária
 // Senha Temporaria
 
@@ -831,10 +831,9 @@ function senhaTemporaria() {
 
   // URL do endpoint
 
-  // const endpoint =
-  //   'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
+   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential/reset';
 
-  const endpoint = 'http://localhost:8080/api/v1/credential/reset';
+  //const endpoint = 'http://localhost:8080/api/v1/credential/reset';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {

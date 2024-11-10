@@ -6,7 +6,8 @@
     <title>Novo Usuário</title>
 
     <script src="script.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
   </head>
   <body>
     <header>
@@ -22,36 +23,46 @@
 
     <main>
 
-      <div class="page-title">
+      <div class="container">
+        <div class="content">
         <h3>Cadastrar novo usuário</h3>
-      </div>
 
-
+<br>
       <!-- <form action="http://localhost:8080/api/v1/credential" method="POST"> -->
 
       <!-- <label for="">Nome do usuário:</label>
         <input type="text" name="" id="" required /><br /> -->
 
       <label for="">E-mail:</label>
-      <input type="" name="" id="e-mail_cadastrar" required /><br />
-
+      <input placeholder="Informe um e-mail válido" type="" name="" id="e-mail_cadastrar" required /><br />
+<br>
       <label for="">Senha:</label>
-      <input type="" name="" id="senha_cadastrar" required />
+      <input placeholder="Cadastre uma senha" type="" name="" id="senha_cadastrar" required />
 
-      <button type="submit" onclick="cadastrarUsuario()">
+      <br>
+      <br>
+      <button class="btn_cons bt1" type="submit" onclick="cadastrarUsuario()">
         Enviar cadastro
       </button>
       <!-- </form> -->
-
+<br>
+<br>
       <div id="mensagem"></div>
       
       <br>
       
       <div>
         <div class="voltar">
-          <a href="login.html">Voltar para a tela de login</a>
+          <button class="btn_cons bt2">
+            <a href="login.html">Voltar para a tela de login</a>
+          </button>
+   
         </div>
       </div>
+
+    </div>
+  </div>
+
     </main>
 
     <footer>

@@ -1,6 +1,6 @@
 # ![logo  emporio 2018 211122 (1)](https://github.com/Projeto-Integrador-DRP14-PJI110/emporio.sabor.real.front-end/assets/166082678/8c4a098d-845d-4fb1-a972-71779aef103b)
-* *Projeto Integrador*: DRP14-PJI110-GRUPO-005 - UNIVESP - 1º Semestre de 2024 :student:
-* *Objetivos*: Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão. :floppy_disk:
+* *Projeto Integrador*: DRP14-PJI240-TURMA 007 - UNIVESP - 2º Semestre de 2024 :student:
+* *Objetivos*: Implementar atualizações no sofwtare controle de estoques desenvolvimento no 1º Semestre de 2024, no qual foi utilizado framework web, banco de banco de dados, api e controle de versão. :floppy_disk:
 * *Aplicação*: Controle de Estoque dos produtos do Empório Sabor Real  :cheese:
 * *Status do Projeto*: :heavy_check_mark: Concluído
 * *Funcionalidades e Demonstração da Aplicação*: :film_strip:
@@ -14,7 +14,7 @@
   - Adriano Lopes de Meira :man_student:
   - Geovanna Duarte Santana :woman_student:
   - Igor Delfino dos Santos :man_student:
-  - Juliane Pinheiro Ferreira :woman_student:
-  - Lais Costa de Meira :woman_student:
-  - Thais Cristina Conceição Marques Monteiro :woman_student:
-* *Conclusão*: Foi desenvolvido um software funcional para o ínicio de controle de estoque automatizado que antes era feito de forma manual pela proprietária, existe espaço para aprimoramentos que poderão ser aplicados nos próximos projetos integradores.
+  - Vinicius Alcaras Pelegrini :man_student:
+  - Luiz Alexandre Kikuchi Negrao :man_student:
+  - Danilo Costa da Silva :man_student:
+* *Conclusão*: Foi implementado atualizações no software controle de estoques, principalmente nos quesitos de seguranção com login e senha, além do beneficio inicial quando do desenvolvido do software para controle de estoque automatizado que antes era feito de forma manual pela proprietária, ainda há espaço para aprimoramentos que poderão ser aplicados nos próximos projetos integradores.

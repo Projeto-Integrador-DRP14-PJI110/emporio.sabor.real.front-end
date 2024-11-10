@@ -6,7 +6,8 @@
     <title>Recuperar a Senha</title>
 
     <script src="script.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/" />
   </head>
   <body>
     <header>
@@ -21,30 +22,54 @@
     </header>
 
     <main>
+      <div class="container">
+        <div class="content">
+          <h3>Gerar senha temporária</h3>
+          <br />
 
-      <div class="page-title">
-        <h3>Gerar senha temporária</h3>
-      </div>
+          <!-- <form action="" onsubmit="enviarFormulario(event)"> -->
 
-      <!-- <form action="" onsubmit="enviarFormulario(event)"> -->
+          <label for="">Informe seu e-mail:</label>
+          <input
+            placeholder="Informe seu e-mail cadastrado"
+            type="email"
+            name=""
+            id="email"
+            required
+          />
 
-        <label for="">Informe seu e-mail:</label>
-        <input type="email" name="" id="email" required />
+          <br />
+          <br />
+          <button
+            class="btn_cons bt1"
+            type="submit"
+            onclick="senhaTemporaria()"
+          >
+            Recuperar senha
+          </button>
 
-        <button type="submit" onclick="senhaTemporaria()" >Recuperar senha</button>
+          <!-- </form> -->
+          <br />
+          <br />
+          <div id="mensagem"></div>
 
-      <!-- </form> -->
+          <div id="mensagem_2"></div>
+          <br />
+          <button class="btn_cons bt2">
+            <a href="login-senhaTemporaria.html"
+              >Ir para tela de troca de senha</a
+            >
+          </button>
 
-      <div id="mensagem"></div>
+          <br />
+          <br />
 
-      <div id="mensagem_2"></div>
-
-      <a href="login-senhaTemporaria.html">Ir para tela de troca de senha</a>
-
-      <br>
-
-      <div class="voltar">
-        <a href="login.html">Voltar para a tela de login</a>
+          <div class="voltar">
+            <button class="btn_cons bt2">
+              <a href="login.html">Voltar para a tela de login</a>
+            </button>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -52,7 +77,7 @@
       <p>DRP14 - Projeto Integrador em Computação II - Turma 007</p>
     </footer>
 
-    <script>
+    <!-- <script>
       function enviarFormulario(event) {
         event.preventDefault(); // Impede o envio padrão do formulário
         const form = event.target; // Obtém o formulário que disparou o evento
@@ -63,6 +88,6 @@
           window.location.href = 'login-senhaTemporaria.html'; // Substitua pela URL desejada
         }, 1); // Ajuste o tempo conforme necessário
       }
-    </script>
+    </script> -->
   </body>
 </html>
