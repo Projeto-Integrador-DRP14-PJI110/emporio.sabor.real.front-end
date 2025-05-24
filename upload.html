@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Consultar por categoria</title>
-
-    <script src="script.js"></script>
+    <title>Upload de arquivo Excel</title>
+   
     <link rel="stylesheet" href="css/padrao.css" />
     <!-- <link rel="stylesheet" href="css/" /> -->
+    <script src="upload.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,23 +25,27 @@
       <div class="container">
         <div class="content">
 
-          <h3>Menu Consultar por Categoria</h3>
+          <h3>Realize aqui o upload do seu arquivo Excel</h3>
 
           <br>
 
-          <input
-            id="id_do_produto_consultar4"
-            type="text"
-            placeholder="Nome da categoria para consultar"
-          />
-          <br />
+          <p></p>
+
+        
           <br />
 
-          <div class="botao">
-          <button class= "btn_cons bt1" id="btn_consultar4" type="submit" onclick="consultar4()">
-            Consultar por Categoria
-          </button>
-        </div>
+
+          <form id="uploadForm">
+            <input type="file" id="arquivo" name="arquivo" accept=".xlsx">
+            <button type="submit">Enviar</button>
+          </form>
+        
+          <br>
+
+
+          
+           
+       
 
           <ul id="reposConsultar"></ul>
 
@@ -51,19 +55,40 @@
 <br>
           <div id="mensagem4"></div>
 
-        <br />
+        <div class="excel"> 
+          <!-- <p>Templete Excel</p>  -->
+          <img
+          src="Images/lote2.png"
+          width="100%"
+         
+          alt="lote"
+        />
+      </div>
+
+
+      <a href="/templates/TEMPLATE ESTOQUE - EMPÓRIO SABOR REAL.xlsx" download="template.xlsx">
+        <button>📥 Baixe aqui este Template Excel</button>
+    </a>
+    
+<br>
+<br />
+
         <div class="voltar"> 
           <button  class= "btn_cons bt2" >
             <a href="index.html">Voltar para o Menu Principal</a>
           </button>
         </div>
 
-        </div>
       </div>
+  
+
     </main>
+
 
     <footer>
       <p>DRP14 - Projeto Integrador em Computação III - Turma 006</p>
     </footer>
+
+
   </body>
 </html>

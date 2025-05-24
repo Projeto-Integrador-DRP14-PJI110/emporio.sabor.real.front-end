@@ -30,9 +30,9 @@ function cadastrar() {
 
   // URL do endpoint
 
-  const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
+  // const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque';
 
-  //const endpoint = 'http://localhost:8080/api/v1/estoque';
+  const endpoint = 'http://localhost:8080/api/v1/estoque';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -116,9 +116,9 @@ function criarEstruturaTabela(dados) {
 
 function consultar() {
   let id = document.getElementById('id_do_produto_consultar').value;
-  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/id/${id}`;
+  // const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/id/${id}`;
 
- // const endpoint = `http://localhost:8080/api/v1/estoque/id/${id}`;
+  const endpoint = `http://localhost:8080/api/v1/estoque/id/${id}`;
 
   fetch(endpoint)
     .then(res => {
@@ -243,9 +243,9 @@ function criarEstruturaTabela3(dados) {
 
 function consultar3() {
   let produto = document.getElementById('id_do_produto_consultar3').value;
-   const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/produto/${produto}`;
+  //  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/produto/${produto}`;
 
-  //const endpoint = `http://localhost:8080/api/v1/estoque/produto/${produto}`;
+  const endpoint = `http://localhost:8080/api/v1/estoque/produto/${produto}`;
 
   fetch(endpoint)
     .then(res => {
@@ -350,9 +350,9 @@ function criarEstruturaProduto4(dados) {
 function consultar4() {
   let categoria = document.getElementById('id_do_produto_consultar4').value;
 
-  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/categoria/${categoria}`;
+  // const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/categoria/${categoria}`;
 
-  //const endpoint = `http://localhost:8080/api/v1/estoque/categoria/${categoria}`;
+  const endpoint = `http://localhost:8080/api/v1/estoque/categoria/${categoria}`;
 
   fetch(endpoint)
     .then(res => {
@@ -421,9 +421,9 @@ function criarEstruturaProduto(dados) {
 }
 
 function consultar2() {
-  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque`;
+  // const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque`;
 
- // const endpoint = `http://localhost:8080/api/v1/estoque`;
+  const endpoint = `http://localhost:8080/api/v1/estoque`;
 
   fetch(endpoint)
     .then(res => res.json())
@@ -468,9 +468,9 @@ function consultar2() {
 function consultarParaEditar() {
   let id = document.getElementById('id_do_produto_editar').value;
 
-  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/id/${id}`;
+  // const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/id/${id}`;
 
-  //const endpoint = `http://localhost:8080/api/v1/estoque/id/${id}`;
+  const endpoint = `http://localhost:8080/api/v1/estoque/id/${id}`;
 
   fetch(endpoint)
     .then(res => {
@@ -510,8 +510,8 @@ function consultarParaEditar() {
 function editar() {
   let id = document.getElementById('id_do_produto_editar').value;
 
-  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/${id}`;
-  //const endpoint = `http://localhost:8080/api/v1/estoque/${id}`;
+  // const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/${id}`;
+  const endpoint = `http://localhost:8080/api/v1/estoque/${id}`;
 
   const data = {
     produto: document.getElementById('produto_editar').value,
@@ -643,9 +643,9 @@ function editar() {
 function excluir() {
   let id = document.getElementById('id_do_produto_excluir').value;
 
-  const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/${id}`;
+  // const endpoint = `https://emporiosaborrealapi-production.up.railway.app/api/v1/estoque/${id}`;
 
-  //const endpoint = `http://localhost:8080/api/v1/estoque/${id}`;
+  const endpoint = `http://localhost:8080/api/v1/estoque/${id}`;
 
   fetch(endpoint, {
     method: 'DELETE',
@@ -687,9 +687,9 @@ function cadastrarUsuario() {
 
   // URL do endpoint
 
-   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential';
+  //  const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential';
 
-  // const endpoint = 'http://localhost:8080/api/v1/credential';
+  const endpoint = 'http://localhost:8080/api/v1/credential';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -735,9 +735,9 @@ function logarUsuario() {
 
   // URL do endpoint
 
-   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/login';
+  //  const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/login';
 
- // const endpoint = 'http://localhost:8080/api/v1/login';
+  const endpoint = 'http://localhost:8080/api/v1/login';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -785,9 +785,9 @@ function trocarSenha() {
 
   // URL do endpoint
 
-   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential';
+  //  const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential';
 
-  //const endpoint = 'http://localhost:8080/api/v1/credential';
+  const endpoint = 'http://localhost:8080/api/v1/credential';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -831,9 +831,9 @@ function senhaTemporaria() {
 
   // URL do endpoint
 
-   const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential/reset';
+  //  const endpoint = 'https://emporiosaborrealapi-production.up.railway.app/api/v1/credential/reset';
 
-  //const endpoint = 'http://localhost:8080/api/v1/credential/reset';
+  const endpoint = 'http://localhost:8080/api/v1/credential/reset';
 
   // Envia a requisição para o endpoint
   fetch(endpoint, {
@@ -855,13 +855,10 @@ function senhaTemporaria() {
       // Verifica e exibe a senha correta
       const password = dados.response?.password;
       if (password) {
-        document.getElementById('mensagem').innerText =
-          'Senha gerada com sucesso';
-        document.getElementById(
-          'mensagem_2'
-        ).innerText = `A senha gerada é: ${password}`;
-        // Redirecionar para outra página ou mostrar uma mensagem de sucesso
-        //window.location.href = 'login-senhaTemporaria.html';
+
+        
+         //Redirecionar para outra página ou mostrar uma mensagem de sucesso
+        window.location.href = 'login-senhaTemporaria.html';
       } else {
         throw new Error(
           'A propriedade "password" não foi encontrada na resposta'
@@ -874,4 +871,53 @@ function senhaTemporaria() {
         'Erro ao gerar a senha. Preencha o e-mail corretamente.';
     });
 }
+//#endregion
+
+
+//#region upload de arquivo
+
+// const form = document.getElementById('uploadForm');
+
+// if (!form) {
+//   console.error("Elemento #uploadForm não encontrado no DOM.");
+// } else {
+//   form.addEventListener('submit', function (e) {
+//     e.preventDefault();
+
+//     const input = document.getElementById('arquivo');
+//     const file = input.files[0];
+
+//     if (!file) {
+//       alert("Selecione um arquivo .xlsx antes de enviar.");
+//       return;
+//     }
+
+//     const formData = new FormData();
+//     formData.append('arquivo', file);
+
+//     fetch('http://localhost:8070/api/v1/upload', {
+//       method: 'POST',
+//       body: formData
+//     })
+//     .then(response => {
+//       if (response.ok) {
+//         alert('Arquivo .xlsx enviado com sucesso!');
+//         window.location.href = 'consultarTodos.html';
+//       } else {
+//         alert('Erro ao enviar o arquivo. Código: ' + response.status);
+//         window.location.href = 'consultarTodos.html';
+//       }
+//     })
+//     .catch(error => {
+//       alert('Erro na requisição: ' + error.message);
+//     });
+//   });
+// }
+
+
+
+
+
+
+
 //#endregion
